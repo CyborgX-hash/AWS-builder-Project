@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    background-color: #F7FAF7;
+    color: #26352B;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EAF5EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #237A45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #164B32;
+}
+
