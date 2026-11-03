@@ -1,0 +1,517 @@
+{
+  "crops": {
+    "soybean": {
+      "crop_name": "Soybean",
+      "crop_name_hi": "सोयाबीन",
+      "scientific_name": "Glycine max",
+      "category": "Kharif Oilseed / Legume",
+      "major_regions": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Karnataka"],
+      "soil_preferences": "Well-drained, fertile black and clay loam soils with pH 6.0 to 7.5. Highly sensitive to water stagnation.",
+      "sourced_references": [
+        "ICAR - Indian Institute of Soybean Research (IISR), Indore",
+        "FAO Irrigation and Drainage Paper No. 56 (Crop Evapotranspiration)",
+        "IMD Agromet Advisory Services for Central India"
+      ],
+      "growth_stages": [
+        {
+          "stage_name": "Germination / Emergence",
+          "stage_name_hi": "अंकुरण एवं प्रारंभिक अवस्था",
+          "duration_days": "1 - 10",
+          "temp_min_c": 15.0,
+          "temp_opt_min_c": 22.0,
+          "temp_opt_max_c": 30.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 2.5,
+          "excess_rain_tolerance_mm_day": 35.0,
+          "vulnerable_risks": ["waterlogging", "soil_crusting", "seed_rot"],
+          "stage_monitoring_tips": [
+            "Ensure seedbed is not flooded; water stagnation for >24 hours kills emerging germules.",
+            "Inspect soil surface crusting after light showers."
+          ],
+          "stage_monitoring_tips_hi": [
+            "खेत में पानी जमा न होने दें; 24 घंटे से अधिक जलभराव अंकुरण को नष्ट कर देता है।",
+            "बारिश के बाद जमीन पर पपड़ी बनने की जांच करें।"
+          ]
+        },
+        {
+          "stage_name": "Vegetative",
+          "stage_name_hi": "वानस्पतिक वृद्धि",
+          "duration_days": "11 - 35",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 25.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 40.0,
+          "daily_water_need_mm": 4.5,
+          "excess_rain_tolerance_mm_day": 50.0,
+          "vulnerable_risks": ["dry_spell", "waterlogging", "weed_competition"],
+          "stage_monitoring_tips": [
+            "Maintain clean drainage channels across field contours.",
+            "Watch for yellow mosaic virus vectors if dry spell exceeds 7 days."
+          ],
+          "stage_monitoring_tips_hi": [
+            "खेत के ढलान के अनुसार जल निकासी की नालियां साफ रखें।",
+            "यदि 7 दिन से अधिक सूखा रहता है तो कीटों और पीला मोज़ेक वायरस की निगरानी करें।"
+          ]
+        },
+        {
+          "stage_name": "Flowering",
+          "stage_name_hi": "फूल आने की अवस्था",
+          "duration_days": "36 - 60",
+          "temp_min_c": 20.0,
+          "temp_opt_min_c": 24.0,
+          "temp_opt_max_c": 30.0,
+          "temp_max_c": 36.0,
+          "daily_water_need_mm": 6.5,
+          "excess_rain_tolerance_mm_day": 40.0,
+          "vulnerable_risks": ["heat_stress", "excessive_rainfall", "flower_drop"],
+          "stage_monitoring_tips": [
+            "Critical stage! Ambient temperatures >35°C cause significant flower abortion.",
+            "Heavy rain splash damages delicate flowers; avoid field operations when plants are wet."
+          ],
+          "stage_monitoring_tips_hi": [
+            "अत्यंत संवेदनशील अवस्था! 35°C से अधिक तापमान से फूल झड़ने लगते हैं।",
+            "भारी बारिश से फूल नष्ट हो सकते हैं; पौधे गीले होने पर निराई-गुड़ाई से बचें।"
+          ]
+        },
+        {
+          "stage_name": "Pod Development / Seed Filling",
+          "stage_name_hi": "फली विकास एवं दाना भराव",
+          "duration_days": "61 - 85",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 22.0,
+          "temp_opt_max_c": 28.0,
+          "temp_max_c": 35.0,
+          "daily_water_need_mm": 5.5,
+          "excess_rain_tolerance_mm_day": 45.0,
+          "vulnerable_risks": ["water_stress", "dry_spell", "charcoal_rot"],
+          "stage_monitoring_tips": [
+            "Moisture stress directly reduces pod count and test seed weight.",
+            "Ensure supplemental irrigation if dry spell exceeds 10 days."
+          ],
+          "stage_monitoring_tips_hi": [
+            "नमी की कमी से फलियों में दाने सिकुड़ जाते हैं और उपज घटती है।",
+            "यदि 10 दिन से अधिक बारिश न हो तो तुरंत जीवन रक्षक सिंचाई दें।"
+          ]
+        },
+        {
+          "stage_name": "Maturity / Harvest",
+          "stage_name_hi": "परिपक्वता एवं कटाई",
+          "duration_days": "86 - 105",
+          "temp_min_c": 15.0,
+          "temp_opt_min_c": 20.0,
+          "temp_opt_max_c": 28.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 2.0,
+          "excess_rain_tolerance_mm_day": 20.0,
+          "vulnerable_risks": ["excessive_rainfall", "pod_shattering", "seed_germination_in_pod"],
+          "stage_monitoring_tips": [
+            "Rain during maturity triggers viviparous seed germination in pods and fungal discolouration.",
+            "Harvest promptly when 90% leaves turn yellow and drop off."
+          ],
+          "stage_monitoring_tips_hi": [
+            "कटाई के समय बारिश होने से फलियों के अंदर ही बीज अंकुरित हो जाते हैं।",
+            "जब 90% पत्तियां पीली होकर गिर जाएं तो मौसम साफ होते ही शीघ्र कटाई करें।"
+          ]
+        }
+      ]
+    },
+    "rice": {
+      "crop_name": "Rice / Paddy",
+      "crop_name_hi": "धान / चावल",
+      "scientific_name": "Oryza sativa",
+      "category": "Kharif / Rabi Cereal",
+      "major_regions": ["West Bengal", "Uttar Pradesh", "Punjab", "Odisha", "Chhattisgarh", "Telangana", "Andhra Pradesh"],
+      "soil_preferences": "Clayey, heavy soils with low water permeability and high moisture retention capacity (pH 5.5 - 7.0).",
+      "sourced_references": [
+        "ICAR - National Rice Research Institute (NRRI), Cuttack",
+        "Directorate of Rice Research (IIRR), Hyderabad",
+        "FAO Rice Knowledge Bank"
+      ],
+      "growth_stages": [
+        {
+          "stage_name": "Nursery / Seedling",
+          "stage_name_hi": "नर्सरी एवं पौध अवस्था",
+          "duration_days": "1 - 25",
+          "temp_min_c": 16.0,
+          "temp_opt_min_c": 24.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 4.0,
+          "excess_rain_tolerance_mm_day": 75.0,
+          "vulnerable_risks": ["submergence", "cold_injury"],
+          "stage_monitoring_tips": [
+            "Protect young nursery beds from flash flooding submersion exceeding 48 hours.",
+            "Drain excess water if seedlings are completely submerged."
+          ],
+          "stage_monitoring_tips_hi": [
+            "नर्सरी के पौधों को 48 घंटे से अधिक जलमग्न न होने दें।",
+            "पौध पूरी तरह डूबने पर तुरंत अतिरिक्त पानी बाहर निकालें।"
+          ]
+        },
+        {
+          "stage_name": "Tillering",
+          "stage_name_hi": "कल्ले फूटने की अवस्था",
+          "duration_days": "26 - 55",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 25.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 6.0,
+          "excess_rain_tolerance_mm_day": 90.0,
+          "vulnerable_risks": ["water_stress", "bacterial_leaf_blight"],
+          "stage_monitoring_tips": [
+            "Maintain 2-5 cm shallow standing water for optimum tillering.",
+            "High humidity >85% with continuous cloudiness promotes blast and sheath blight."
+          ],
+          "stage_monitoring_tips_hi": [
+            "अधिक कल्ले निकलने के लिए खेत में 2-5 सेमी पानी बनाए रखें।",
+            "85% से अधिक नमी और लगातार बादल रहने पर शीथ ब्लाइट और झुलसा रोग की जांच करें।"
+          ]
+        },
+        {
+          "stage_name": "Panicle Initiation / Flowering",
+          "stage_name_hi": "बाली निकलना एवं फूल अवस्था",
+          "duration_days": "56 - 85",
+          "temp_min_c": 20.0,
+          "temp_opt_min_c": 25.0,
+          "temp_opt_max_c": 31.0,
+          "temp_max_c": 35.0,
+          "daily_water_need_mm": 8.0,
+          "excess_rain_tolerance_mm_day": 80.0,
+          "vulnerable_risks": ["heat_stress", "wind_lodging", "pollen_sterility"],
+          "stage_monitoring_tips": [
+            "Temperatures above 35°C during anthesis (morning) induce pollen sterility and high chaffy grains.",
+            "High wind speed >25 km/h causes plant lodging."
+          ],
+          "stage_monitoring_tips_hi": [
+            "फूल आने के समय 35°C से अधिक तापमान से दाने थोथे (फोक) रह जाते हैं।",
+            "25 किमी/घंटा से तेज हवा पौधों को गिरा सकती है।"
+          ]
+        },
+        {
+          "stage_name": "Grain Filling / Dough Stage",
+          "stage_name_hi": "दुग्धावस्था एवं दाना भराव",
+          "duration_days": "86 - 110",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 22.0,
+          "temp_opt_max_c": 28.0,
+          "temp_max_c": 34.0,
+          "daily_water_need_mm": 6.0,
+          "excess_rain_tolerance_mm_day": 60.0,
+          "vulnerable_risks": ["water_stress", "brown_planthopper"],
+          "stage_monitoring_tips": [
+            "Soil drying out during grain filling causes unfilled grains and lower milling recovery.",
+            "Drain water 10-14 days before expected harvest."
+          ],
+          "stage_monitoring_tips_hi": [
+            "दूधिया अवस्था में खेत सूखने न दें, अन्यथा दाने पतले रह जाएंगे।",
+            "कटाई से 10-14 दिन पहले खेत से पानी पूरी तरह निकाल दें।"
+          ]
+        },
+        {
+          "stage_name": "Maturity / Harvest",
+          "stage_name_hi": "परिपक्वता एवं कटाई",
+          "duration_days": "111 - 130",
+          "temp_min_c": 15.0,
+          "temp_opt_min_c": 20.0,
+          "temp_opt_max_c": 28.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 1.0,
+          "excess_rain_tolerance_mm_day": 25.0,
+          "vulnerable_risks": ["unseasonal_rainfall", "grain_discolouration", "shattering"],
+          "stage_monitoring_tips": [
+            "Unseasonal rain causes lodging of mature crop and grain discolouration.",
+            "Harvest when 80-85% grains turn golden yellow."
+          ],
+          "stage_monitoring_tips_hi": [
+            "बेमौसम बारिश से पकी फसल गिर सकती है और दानों में फफूंद लग सकती है।",
+            "जब 80-85% बालियां सुनहरी पीली हो जाएं तो तुरंत कटाई करें।"
+          ]
+        }
+      ]
+    },
+    "wheat": {
+      "crop_name": "Wheat",
+      "crop_name_hi": "गेहूं",
+      "scientific_name": "Triticum aestivum",
+      "category": "Rabi Cereal",
+      "major_regions": ["Uttar Pradesh", "Punjab", "Haryana", "Madhya Pradesh", "Rajasthan", "Bihar"],
+      "soil_preferences": "Well-drained loams and clay loams, rich in organic matter (pH 6.5 - 7.5). Susceptible to water stagnation.",
+      "sourced_references": [
+        "ICAR - Indian Institute of Wheat and Barley Research (IIWBR), Karnal",
+        "CIMMYT Global Wheat Program Guidelines",
+        "IMD Agromet Advisory - Rabi Season"
+      ],
+      "growth_stages": [
+        {
+          "stage_name": "Crown Root Initiation (CRI)",
+          "stage_name_hi": "ताज जड़ निकलने की अवस्था (CRI)",
+          "duration_days": "20 - 25",
+          "temp_min_c": 10.0,
+          "temp_opt_min_c": 16.0,
+          "temp_opt_max_c": 22.0,
+          "temp_max_c": 26.0,
+          "daily_water_need_mm": 3.0,
+          "excess_rain_tolerance_mm_day": 30.0,
+          "vulnerable_risks": ["water_stress", "waterlogging"],
+          "stage_monitoring_tips": [
+            "Most critical irrigation stage. Water stress at CRI cuts yield by 20-30%.",
+            "Do not allow standing water to remain >12 hours."
+          ],
+          "stage_monitoring_tips_hi": [
+            "सबसे महत्वपूर्ण अवस्था! ताज जड़ बनते समय नमी की कमी से 20-30% उपज घट सकती है।",
+            "खेत में 12 घंटे से अधिक पानी खड़ा न रहने दें।"
+          ]
+        },
+        {
+          "stage_name": "Tillering & Jointing",
+          "stage_name_hi": "कल्ले फूटना एवं गांठ बनना",
+          "duration_days": "26 - 60",
+          "temp_min_c": 10.0,
+          "temp_opt_min_c": 15.0,
+          "temp_opt_max_c": 20.0,
+          "temp_max_c": 25.0,
+          "daily_water_need_mm": 4.0,
+          "excess_rain_tolerance_mm_day": 40.0,
+          "vulnerable_risks": ["yellow_rust", "excess_temperature"],
+          "stage_monitoring_tips": [
+            "Cool weather with dew favors tillering; watch for stripe rust if damp and cloudy.",
+            "Avoid high nitrogen top dressing if heavy rainfall is forecast."
+          ],
+          "stage_monitoring_tips_hi": [
+            "ठंडा मौसम कल्ले बनने में सहायक है; अधिक नमी होने पर पीला रतुआ (गेरुआ) की जांच करें।",
+            "यदि बारिश का अनुमान हो तो यूरिया का छिड़काव रोक दें।"
+          ]
+        },
+        {
+          "stage_name": "Flowering / Heading",
+          "stage_name_hi": "बाली निकलना एवं फूल अवस्था",
+          "duration_days": "61 - 85",
+          "temp_min_c": 12.0,
+          "temp_opt_min_c": 18.0,
+          "temp_opt_max_c": 23.0,
+          "temp_max_c": 28.0,
+          "daily_water_need_mm": 5.0,
+          "excess_rain_tolerance_mm_day": 35.0,
+          "vulnerable_risks": ["terminal_heat", "frost", "hailstorm"],
+          "stage_monitoring_tips": [
+            "Early heat waves with daytime temp >30°C cause floret sterility.",
+            "Hailstorm and strong winds cause catastrophic lodging."
+          ],
+          "stage_monitoring_tips_hi": [
+            "दिन का तापमान 30°C से ऊपर जाने पर फूल सूखने का खतरा रहता है।",
+            "तेज हवा और ओलावृष्टि से फसल के गिरने का खतरा रहता है।"
+          ]
+        },
+        {
+          "stage_name": "Milking & Dough (Grain Filling)",
+          "stage_name_hi": "दूधिया एवं दाना भराव अवस्था",
+          "duration_days": "86 - 110",
+          "temp_min_c": 14.0,
+          "temp_opt_min_c": 20.0,
+          "temp_opt_max_c": 25.0,
+          "temp_max_c": 32.0,
+          "daily_water_need_mm": 4.5,
+          "excess_rain_tolerance_mm_day": 30.0,
+          "vulnerable_risks": ["terminal_heat_stress", "shriveling"],
+          "stage_monitoring_tips": [
+            "Terminal heat stress (>32°C) causes forced maturity and shriveled grains.",
+            "Provide light irrigation to cool crop canopy during sudden March heat spikes."
+          ],
+          "stage_monitoring_tips_hi": [
+            "मार्च में अचानक तापमान 32°C से ऊपर जाने पर दाने सिकुड़ जाते हैं।",
+            "गर्मी से बचाने के लिए शाम के समय हल्की सिंचाई करें।"
+          ]
+        },
+        {
+          "stage_name": "Maturity / Harvest",
+          "stage_name_hi": "परिपक्वता एवं कटाई",
+          "duration_days": "111 - 130",
+          "temp_min_c": 15.0,
+          "temp_opt_min_c": 22.0,
+          "temp_opt_max_c": 30.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 1.0,
+          "excess_rain_tolerance_mm_day": 15.0,
+          "vulnerable_risks": ["unseasonal_rain", "grain_blackening"],
+          "stage_monitoring_tips": [
+            "Rain and western disturbances damage harvested wheat in open mandis and fields.",
+            "Store harvested grains below 12% moisture."
+          ],
+          "stage_monitoring_tips_hi": [
+            "कटाई के समय पश्चिमी विक्षोभ की बारिश से दानों की चमक खराब हो जाती है।",
+            "अनाज को 12% से कम नमी पर ही भंडारित करें।"
+          ]
+        }
+      ]
+    },
+    "maize": {
+      "crop_name": "Maize",
+      "crop_name_hi": "मक्का",
+      "scientific_name": "Zea mays",
+      "category": "Kharif / Rabi / Zaid Cereal",
+      "major_regions": ["Karnataka", "Madhya Pradesh", "Bihar", "Rajasthan", "Maharashtra", "Andhra Pradesh"],
+      "soil_preferences": "Deep, well-drained loams and sandy loams rich in organic matter. Intolerant to waterlogging.",
+      "sourced_references": [
+        "ICAR - Indian Institute of Maize Research (IIMR), Ludhiana",
+        "FAO Crop Water Requirements - Maize"
+      ],
+      "growth_stages": [
+        {
+          "stage_name": "Knee-High (Vegetative)",
+          "stage_name_hi": "घुटने तक की वृद्धि अवस्था",
+          "duration_days": "20 - 40",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 24.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 4.5,
+          "excess_rain_tolerance_mm_day": 40.0,
+          "vulnerable_risks": ["fall_armyworm", "waterlogging"],
+          "stage_monitoring_tips": [
+            "Waterlogging for 48 hours reduces vegetative dry weight by 35%.",
+            "Scout whorls for early Fall Armyworm presence."
+          ],
+          "stage_monitoring_tips_hi": [
+            "48 घंटे पानी भरा रहने से पौधे की बढ़वार 35% तक रुक जाती है।",
+            "गोभ (व्होर्ल) में फॉल आर्मीवर्म कीट के लक्षण जांचें।"
+          ]
+        },
+        {
+          "stage_name": "Tasseling & Silking",
+          "stage_name_hi": "मंजरी (नर फूल) एवं भुट्टा रेशे निकलना",
+          "duration_days": "45 - 65",
+          "temp_min_c": 20.0,
+          "temp_opt_min_c": 24.0,
+          "temp_opt_max_c": 30.0,
+          "temp_max_c": 35.0,
+          "daily_water_need_mm": 7.0,
+          "excess_rain_tolerance_mm_day": 45.0,
+          "vulnerable_risks": ["heat_desiccation", "drought_stress"],
+          "stage_monitoring_tips": [
+            "Extremely sensitive window: High heat (>35°C) desicates silk and kills pollen, causing bare cobs.",
+            "Adequate soil moisture is non-negotiable during silking."
+          ],
+          "stage_monitoring_tips_hi": [
+            "अत्यधिक संवेदनशील समय: 35°C से अधिक गर्मी में रेशे सूख जाते हैं और भुट्टे खाली रह जाते हैं।",
+            "रेशे निकलने के समय खेत में पर्याप्त नमी बनाए रखना अति आवश्यक है।"
+          ]
+        },
+        {
+          "stage_name": "Grain Filling / Dough",
+          "stage_name_hi": "दाना भराव अवस्था",
+          "duration_days": "66 - 85",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 22.0,
+          "temp_opt_max_c": 30.0,
+          "temp_max_c": 36.0,
+          "daily_water_need_mm": 5.5,
+          "excess_rain_tolerance_mm_day": 45.0,
+          "vulnerable_risks": ["stalk_rot", "water_stress"],
+          "stage_monitoring_tips": [
+            "Water stress leads to small grain size and early senescence.",
+            "Water stagnation encourages Post-Flowering Stalk Rot (PFSR)."
+          ],
+          "stage_monitoring_tips_hi": [
+            "नमी की कमी से दाने छोटे रह जाते हैं।",
+            "खेत में पानी जमा रहने से तना सड़न रोग लग सकता है।"
+          ]
+        },
+        {
+          "stage_name": "Maturity / Harvest",
+          "stage_name_hi": "परिपक्वता एवं तुड़ाई",
+          "duration_days": "86 - 105",
+          "temp_min_c": 16.0,
+          "temp_opt_min_c": 20.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 40.0,
+          "daily_water_need_mm": 2.0,
+          "excess_rain_tolerance_mm_day": 20.0,
+          "vulnerable_risks": ["ear_rot", "rainfall_damage"],
+          "stage_monitoring_tips": [
+            "Continuous rain delays cob drying and promotes aflatoxin contamination.",
+            "Harvest cobs when black layer forms at the tip of grains."
+          ],
+          "stage_monitoring_tips_hi": [
+            "लगातार बारिश से भुट्टों में फफूंद और विषैले तत्व पनपते हैं।",
+            "दानों के सिरे पर काली परत दिखने पर तुड़ाई शुरू करें।"
+          ]
+        }
+      ]
+    },
+    "cotton": {
+      "crop_name": "Cotton",
+      "crop_name_hi": "कपास",
+      "scientific_name": "Gossypium hirsutum",
+      "category": "Kharif Commercial / Fiber",
+      "major_regions": ["Gujarat", "Maharashtra", "Telangana", "Andhra Pradesh", "Haryana", "Punjab"],
+      "soil_preferences": "Deep black cotton soils (Vertisols) with good water holding capacity (pH 6.5 - 8.0).",
+      "sourced_references": [
+        "ICAR - Central Institute for Cotton Research (CICR), Nagpur",
+        "IMD Agromet Cotton Advisory Protocols"
+      ],
+      "growth_stages": [
+        {
+          "stage_name": "Vegetative / Square Formation",
+          "stage_name_hi": "वानस्पतिक एवं कली (स्क्वायर) अवस्था",
+          "duration_days": "30 - 60",
+          "temp_min_c": 20.0,
+          "temp_opt_min_c": 26.0,
+          "temp_opt_max_c": 34.0,
+          "temp_max_c": 42.0,
+          "daily_water_need_mm": 4.5,
+          "excess_rain_tolerance_mm_day": 50.0,
+          "vulnerable_risks": ["waterlogging", "square_shedding"],
+          "stage_monitoring_tips": [
+            "Cotton roots are highly sensitive to asphyxiation under waterlogged conditions.",
+            "Drain excess rainwater within 24 hours to prevent square shedding."
+          ],
+          "stage_monitoring_tips_hi": [
+            "कपास की जड़ें जलभराव में घुटने लगती हैं।",
+            "कलियां झड़ने से रोकने के लिए 24 घंटे के अंदर अतिरिक्त पानी निकालें।"
+          ]
+        },
+        {
+          "stage_name": "Flowering & Boll Formation",
+          "stage_name_hi": "फूल एवं टिंडे बनने की अवस्था",
+          "duration_days": "61 - 100",
+          "temp_min_c": 22.0,
+          "temp_opt_min_c": 28.0,
+          "temp_opt_max_c": 34.0,
+          "temp_max_c": 38.0,
+          "daily_water_need_mm": 7.0,
+          "excess_rain_tolerance_mm_day": 40.0,
+          "vulnerable_risks": ["cloudy_weather", "bollworm", "flower_shedding"],
+          "stage_monitoring_tips": [
+            "Prolonged overcast conditions and high humidity trigger massive shedding of squares and young bolls.",
+            "Scout for pink bollworm emergence during peak flowering."
+          ],
+          "stage_monitoring_tips_hi": [
+            "लगातार बादल और अत्यधिक नमी से फूल और छोटे टिंडे भारी संख्या में गिर जाते हैं।",
+            "फूल आने के समय गुलाबी सुंडी की निगरानी रखें।"
+          ]
+        },
+        {
+          "stage_name": "Boll Maturation & Bursting",
+          "stage_name_hi": "टिंडे का पकना एवं खिलना",
+          "duration_days": "101 - 140",
+          "temp_min_c": 18.0,
+          "temp_opt_min_c": 25.0,
+          "temp_opt_max_c": 32.0,
+          "temp_max_c": 40.0,
+          "daily_water_need_mm": 3.0,
+          "excess_rain_tolerance_mm_day": 15.0,
+          "vulnerable_risks": ["excessive_rainfall", "lint_discolouration"],
+          "stage_monitoring_tips": [
+            "Rain during boll bursting stains the lint, degrades cotton grade, and causes boll rot.",
+            "Pick dry opened bolls immediately ahead of predicted wet weather."
+          ],
+          "stage_monitoring_tips_hi": [
+            "टिंडे खिलते समय बारिश से रुई खराब और पीली पड़ जाती है।",
+            "बारिश के पूर्वानुमान से पहले खिले हुए टिंडों की चुनाई कर लें।"
+          ]
+        }
+      ]
+    }
+  }
+}

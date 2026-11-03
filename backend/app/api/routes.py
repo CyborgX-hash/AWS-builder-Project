@@ -73,6 +73,35 @@ async def get_weather_forecast_endpoint(
     return await WeatherService.get_forecast(lat, lon, location or "Farm Location")
 
 
+@router.get("/crops")
+def list_crops():
+    """List all supported crops with localized names and stage descriptions."""
+    from app.tools.crop_tool import load_crop_knowledge
+    data = load_crop_knowledge()
+    crops_summary = []
+    for k, v in data.get("crops", {}).items():
+        crops_summary.append({
+            "key": k,
+            "crop_name": v["crop_name"],
+            "crop_name_hi": v["crop_name_hi"],
+            "category": v["category"],
+            "stages": [s["stage_name"] for s in v["growth_stages"]],
+            "stages_hi": [s["stage_name_hi"] for s in v["growth_stages"]],
+            "references": v.get("sourced_references", [])
+        })
+    return crops_summary
+
+
+@router.get("/crops/{crop_name}")
+def get_crop_details(crop_name: str):
+    """Get complete agronomic profile and stage thresholds for a specific crop."""
+    from app.tools.crop_tool import get_crop_profile
+    result = get_crop_profile(crop_name)
+    if "error" in result:
+        raise HTTPException(status_code=404, detail=result["error"])
+    return result
+
+
 @router.post("/farmer/profile", response_model=FarmerOut)
 def create_farmer_profile(farmer_in: FarmerCreate, db: Session = Depends(get_db)):
     """Store or register a farmer's location and preferred crop profile."""

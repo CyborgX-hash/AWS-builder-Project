@@ -1,0 +1,116 @@
+{
+  "rules": {
+    "excessive_rainfall": {
+      "HIGH": {
+        "immediate_en": [
+          "Open and deepen field drainage outlets immediately to prevent standing water.",
+          "Clear debris, weeds, and blockages from field border channels.",
+          "Suspend all planned chemical sprays, top-dressing of urea, and routine irrigation."
+        ],
+        "immediate_hi": [
+          "खेत में पानी जमा होने से रोकने के लिए जल निकासी की नालियों को तुरंत खोलें और गहरा करें।",
+          "खेत की मेड़ों और नालियों से कचरा और खरपतवार साफ करें।",
+          "कीटनाशक छिड़काव, यूरिया डालने और सामान्य सिंचाई को तुरंत स्थगित करें।"
+        ],
+        "planning_day1_en": "Inspect low-lying field contours and create temporary drainage furrows.",
+        "planning_day1_hi": "खेत के निचले हिस्सों का निरीक्षण करें और पानी निकालने के लिए कच्ची नालियां बनाएं।",
+        "planning_day2_en": "Monitor standing water levels; maintain continuous drainage if water accumulates >3 cm.",
+        "planning_day2_hi": "खेत में भरे पानी के स्तर पर नजर रखें; यदि 3 सेमी से अधिक पानी जमा हो तो निरंतर निकासी सुनिश्चित करें।",
+        "planning_day3_en": "Examine crop roots and leaves for waterlogging damage or lodging; prepare to apply light nutrient spray once field dries.",
+        "planning_day3_hi": "फसल की जड़ों और पत्तियों में जलभराव के नुकसान की जांच करें; खेत सूखने के बाद हल्के पोषण छिड़काव की तैयारी करें।"
+      },
+      "MODERATE": {
+        "immediate_en": [
+          "Check field bunds and ensure excess runoff can escape without soil erosion.",
+          "Delay scheduled irrigation until soil moisture returns to safe levels."
+        ],
+        "immediate_hi": [
+          "खेत की मेड़ों की जांच करें और सुनिश्चित करें कि अतिरिक्त पानी मिट्टी का कटाव किए बिना निकल सके।",
+          "मिट्टी में पर्याप्त नमी रहने तक निर्धारित सिंचाई को टालें।"
+        ],
+        "planning_day1_en": "Verify that natural drainage channels are clear of silt.",
+        "planning_day1_hi": "जांच लें कि प्राकृतिक जल निकासी नालियों में मिट्टी न भरी हो।",
+        "planning_day2_en": "Assess soil moisture saturation before operating machinery in the field.",
+        "planning_day2_hi": "खेत में ट्रैक्टर या उपकरण ले जाने से पहले जमीन की गीली स्थिति का आकलन करें।",
+        "planning_day3_en": "Resume normal field inspections once topsoil firming occurs.",
+        "planning_day3_hi": "मिट्टी की ऊपरी सतह सख्त होने पर सामान्य खेत निरीक्षण पुनः शुरू करें।"
+      }
+    },
+    "waterlogging": {
+      "HIGH": {
+        "immediate_en": [
+          "Urgent: Cut trench drains at the lowest point of your field to relieve submerged roots within 24 hours.",
+          "Ensure root zone aeration to prevent phytophthora and root-rot asphyxiation."
+        ],
+        "immediate_hi": [
+          "अत्यंत आवश्यक: 24 घंटे के भीतर डूबी हुई जड़ों को बचाने के लिए खेत के सबसे निचले छोर पर खाईनुमा नाली बनाएं।",
+          "जड़ों को सड़ने और दम घुटने से बचाने के लिए हवा का संचार जरूरी है, पानी तुरंत बाहर निकालें।"
+        ],
+        "planning_day1_en": "Expedite full water evacuation from low pockets using manual furrows or pumps if needed.",
+        "planning_day1_hi": "निचले गड्ढों से पानी निकालने के लिए नालियां बनाएं या आवश्यकता पड़ने पर पंप से पानी निकालें।",
+        "planning_day2_en": "Monitor for yellowing of lower leaves (nitrogen leaching / chlorosis).",
+        "planning_day2_hi": "निचली पत्तियों के पीले पड़ने (नाइट्रोजन की कमी/क्लोरोसिस) की जांच करें।",
+        "planning_day3_en": "Once soil allows walking, apply foliar spray of 1-2% urea or micronutrients to revive stressed roots.",
+        "planning_day3_hi": "जैसे ही खेत चलने लायक हो, तनावग्रस्त जड़ों को सहारा देने के लिए 1-2% यूरिया या सूक्ष्म पोषक तत्वों का पर्णीय छिड़काव करें।"
+      }
+    },
+    "heat_stress": {
+      "HIGH": {
+        "immediate_en": [
+          "Provide light and frequent irrigation during late evening or early morning to reduce soil and canopy temperature.",
+          "Avoid field operations during peak afternoon heat (11:30 AM to 3:30 PM).",
+          "Apply mulch or retain crop residues on soil surface where feasible to conserve moisture."
+        ],
+        "immediate_hi": [
+          "मिट्टी और फसल के तापमान को कम करने के लिए देर शाम या तड़के हल्की सिंचाई करें।",
+          "दोपहर की तेज धूप (11:30 से 3:30 बजे) के दौरान खेत में कोई काम न करें।",
+          "नमी बचाने के लिए संभव हो तो मिट्टी की सतह पर पुआल या सूखी घास (मल्च) बिछाएं।"
+        ],
+        "planning_day1_en": "Check irrigation pumps and schedule night watering to minimize evaporative losses.",
+        "planning_day1_hi": "सिंचाई पंपों की जांच करें और वाष्पीकरण को कम करने के लिए रात में पानी देने की व्यवस्था करें।",
+        "planning_day2_en": "Inspect flower retention; note any abnormal wilting or petal drop during midday.",
+        "planning_day2_hi": "फूलों की स्थिति देखें; दोपहर में पत्तियां मुरझाने या फूल गिरने पर नजर रखें।",
+        "planning_day3_en": "Maintain consistent shallow soil moisture to prevent thermal shock to developing pods/grains.",
+        "planning_day3_hi": "फली या दानों को लू के झटके से बचाने के लिए खेत में हल्की नमी लगातार बनाए रखें।"
+      }
+    },
+    "dry_spell": {
+      "HIGH": {
+        "immediate_en": [
+          "Initiate life-saving protective irrigation targeting the root zone (drip or alternate furrow method).",
+          "Create a dust mulch by light shallow hoeing to break capillary water evaporation from soil pores.",
+          "Withhold nitrogen fertilizers which accelerate vegetative water demand."
+        ],
+        "immediate_hi": [
+          "पौधों को सूखने से बचाने के लिए तुरंत जीवन रक्षक सिंचाई (ड्रिप या एकांतर नाली विधि) दें।",
+          "मिट्टी से नमी का वाष्पीकरण रोकने के लिए हल्की गुड़ाई करके ऊपरी परत को भुरभुरा बनाएं।",
+          "यूरिया न डालें, क्योंकि इससे पानी की मांग और बढ़ जाती है।"
+        ],
+        "planning_day1_en": "Prioritize available water for flowering or grain-filling zones over younger blocks.",
+        "planning_day1_hi": "उपलब्ध पानी को छोटे पौधों की बजाय फूल और दाना बनने वाले हिस्सों में प्राथमिकता से दें।",
+        "planning_day2_en": "Check for pest outbreaks (mites, thrips, aphids) favored by hot dry weather.",
+        "planning_day2_hi": "सूखे और गर्म मौसम में तेजी से पनपने वाले कीटों (माहू, थ्रिप्स, मकड़ी) की जांच करें।",
+        "planning_day3_en": "Plan next irrigation cycle strictly before soil reaches permanent wilting point.",
+        "planning_day3_hi": "मिट्टी के पूरी तरह सूखने से पहले ही अगले पानी का प्रबंध करें।"
+      }
+    },
+    "water_stress": {
+      "HIGH": {
+        "immediate_en": [
+          "Immediate irrigation required: Crop daily evapotranspiration exceeds available soil moisture balance.",
+          "Use anti-transpirant spray (such as kaolin 5% or 0.1% potassium nitrate) if irrigation is constrained."
+        ],
+        "immediate_hi": [
+          "तुरंत सिंचाई की आवश्यकता है: पौधे का पानी वाष्पीकरण के कारण जरूरत से ज्यादा कम हो रहा है।",
+          "यदि पानी की कमी हो तो वाष्पीकरण रोकने के लिए पोटेशियम नाइट्रेट (0.1%) का छिड़काव करें।"
+        ],
+        "planning_day1_en": "Irrigate crop in early morning hours to achieve maximum absorption efficiency.",
+        "planning_day1_hi": "अधिकतम नमी अवशोषण के लिए सुबह जल्दी सिंचाई करें।",
+        "planning_day2_en": "Inspect leaf curl and turgor recovery after watering.",
+        "planning_day2_hi": "पानी देने के बाद पत्तियों के सीधे होने और ताजगी की जांच करें।",
+        "planning_day3_en": "Maintain moisture checks at 15 cm soil depth.",
+        "planning_day3_hi": "15 सेमी की गहराई पर मिट्टी की नमी नियमित जांचते रहें।"
+      }
+    }
+  }
+}
