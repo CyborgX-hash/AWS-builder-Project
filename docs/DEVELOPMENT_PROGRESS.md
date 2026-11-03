@@ -13,8 +13,8 @@ This document tracks all features, milestones, test results, and commits through
 | **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `4882faf` | Yes |
 | **Phase 3** | Agricultural Knowledge Base (Crop Profiles, Growth Stages, Rules) | Completed | `90f26ee` | Yes |
 | **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Completed | `fc3a34c` | Yes |
-| **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Completed | `feat(agent)` | Yes |
-| **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Completed | `feat(orchestrator)` | Yes |
+| **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Completed | `632514b` | Yes |
+| **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Completed | `632514b` | Yes |
 | **Phase 7** | Frontend Development (React, Vite, Tailwind, Bilingual UI) | Pending | - | - |
 | **Phase 8** | Frontend-Backend Integration & E2E Workflows | Pending | - | - |
 | **Phase 9** | Testing, Scenarios & Evaluation Suite | Pending | - | - |
