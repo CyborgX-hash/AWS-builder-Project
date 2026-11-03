@@ -10,7 +10,7 @@ This document tracks all features, milestones, test results, and commits through
 |---|---|---|---|---|
 | **Phase 0** | Repository Inspection, Convention Setup, Initial Git & README | Completed | `28e94a2` | Yes |
 | **Phase 1** | Backend Foundation (FastAPI, Schemas, Config, Health Check) | Completed | `442edea` | Yes |
-| **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `feat(weather)` | Yes |
+| **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `4882faf` | Yes |
 | **Phase 3** | Agricultural Knowledge Base (Crop Profiles, Growth Stages, Rules) | Pending | - | - |
 | **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Pending | - | - |
 | **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Pending | - | - |
