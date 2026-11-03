@@ -61,3 +61,4 @@ All crop thresholds, optimal temperature windows, daily water requirements, and 
 ## 3. FAO Standard Reference
 - **FAO-56 Irrigation and Drainage Paper No. 56**: *Crop Evapotranspiration - Guidelines for computing crop water requirements*.
 - Used for calculating crop water stress and water balance: $ET_c = K_c \times ET_0$.
+

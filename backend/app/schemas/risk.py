@@ -41,3 +41,4 @@ class ComprehensiveRiskReport(BaseModel):
     calculation_timestamp: str
     data_sources: List[str]
     limitations_disclaimer: str
+

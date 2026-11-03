@@ -85,3 +85,4 @@ KrishiSathi employs a hierarchical multi-agent intelligence architecture built o
   - `generate_farming_advisory`: Maps risk levels to practical farm-level precautions and 3-day action roadmaps.
 - **Language Support**: Native Hindi (हिन्दी) and English.
 - **Safety**: Recommends practical physical/drainage/irrigation interventions; never dispenses unverified chemical pesticides or replaces local KVK agronomists.
+

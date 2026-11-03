@@ -109,3 +109,4 @@ def test_api_advisory_generate_endpoint():
     assert data["crop"] == "Soybean"
     assert "immediate_precautions_en" in data
     assert len(data["action_plan_3d"]) == 3
+

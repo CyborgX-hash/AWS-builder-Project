@@ -28,3 +28,4 @@ async def evaluate_climate_risks(
     weather = await WeatherService.get_forecast(latitude, longitude, location_name)
     report = DeterministicRiskEngine.calculate_risks(weather, crop_name, growth_stage)
     return report.model_dump()
+

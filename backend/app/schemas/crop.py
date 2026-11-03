@@ -27,3 +27,4 @@ class CropProfileSchema(BaseModel):
     soil_preferences: str
     sourced_references: List[str]
     notes: Optional[str] = None
+

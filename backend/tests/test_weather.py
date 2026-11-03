@@ -50,3 +50,4 @@ def test_get_weather_forecast_api():
     assert len(data["hourly_next_24h"]) == 24
     assert data["current"]["temperature"] is not None
     assert "Open-Meteo" in data["source"] or "Agro-Meteorological" in data["source"]
+

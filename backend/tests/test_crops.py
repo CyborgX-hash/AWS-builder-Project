@@ -55,3 +55,4 @@ def test_api_get_crop_details():
 def test_api_get_invalid_crop():
     response = client.get("/api/crops/unknown_crop_xyz")
     assert response.status_code == 404
+

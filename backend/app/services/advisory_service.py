@@ -169,3 +169,4 @@ class AdvisoryService:
             forecast_timestamp=risk_report.calculation_timestamp,
             data_sources=risk_report.data_sources
         )
+

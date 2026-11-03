@@ -33,3 +33,4 @@ def create_crop_agent() -> Agent:
         tools=[get_crop_profile, get_growth_stage_info],
         system_prompt=CROP_AGENT_SYSTEM_PROMPT
     )
+

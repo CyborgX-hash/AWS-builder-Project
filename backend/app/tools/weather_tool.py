@@ -62,3 +62,4 @@ async def get_weather_forecast(latitude: float, longitude: float, location_name:
         "retrieved_at": summary.retrieved_at,
         "data_source": summary.source
     }
+

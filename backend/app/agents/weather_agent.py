@@ -29,3 +29,4 @@ def create_weather_agent() -> Agent:
         tools=[get_location_coordinates, get_current_weather, get_weather_forecast],
         system_prompt=WEATHER_AGENT_SYSTEM_PROMPT
     )
+

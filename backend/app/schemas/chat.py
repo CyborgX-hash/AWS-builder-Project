@@ -32,3 +32,4 @@ class ChatResponse(BaseModel):
     agent_traces: List[AgentTraceStep]
     structured_data: Optional[Dict[str, Any]] = None
     disclaimer: str
+

@@ -29,3 +29,4 @@ def create_advisory_agent() -> Agent:
         tools=[generate_farming_advisory],
         system_prompt=ADVISORY_AGENT_SYSTEM_PROMPT
     )
+

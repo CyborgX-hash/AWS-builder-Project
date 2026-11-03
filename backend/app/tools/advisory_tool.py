@@ -32,3 +32,4 @@ async def generate_farming_advisory(
     risk_report = DeterministicRiskEngine.calculate_risks(weather, crop_name, growth_stage)
     advisory = AdvisoryService.generate_advisory(risk_report, weather, preferred_language)
     return advisory.model_dump()
+

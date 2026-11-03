@@ -26,3 +26,4 @@ def create_risk_agent() -> Agent:
         tools=[evaluate_climate_risks],
         system_prompt=RISK_AGENT_SYSTEM_PROMPT
     )
+

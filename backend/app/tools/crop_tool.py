@@ -81,3 +81,4 @@ def get_growth_stage_info(crop_name: str, growth_stage: str) -> Dict[str, Any]:
         "soil_preferences": profile.get("soil_preferences"),
         "sourced_references": profile.get("sourced_references")
     }
+

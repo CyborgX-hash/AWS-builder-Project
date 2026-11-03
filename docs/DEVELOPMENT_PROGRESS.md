@@ -15,8 +15,8 @@ This document tracks all features, milestones, test results, and commits through
 | **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Completed | `fc3a34c` | Yes |
 | **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Completed | `632514b` | Yes |
 | **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Completed | `632514b` | Yes |
-| **Phase 7** | Frontend Development (React, Vite, Tailwind, Bilingual UI) | Completed | `feat(ui)` | Yes |
-| **Phase 8** | Frontend-Backend Integration & E2E Workflows | Completed | `feat(integration)` | Yes |
+| **Phase 7** | Frontend Development (React, Vite, Tailwind, Bilingual UI) | Completed | `0154583` | Yes |
+| **Phase 8** | Frontend-Backend Integration & E2E Workflows | Completed | `0154583` | Yes |
 | **Phase 9** | Testing, Scenarios & Evaluation Suite | Pending | - | - |
 | **Phase 10**| Deployment Configurations & Cloud Readiness | Pending | - | - |
 | **Phase 11**| Final Documentation, Impact Metrics & Submission Polish | Pending | - | - |

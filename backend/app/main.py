@@ -67,3 +67,4 @@ def root():
         "status": "online",
         "docs": "/docs"
     }
+

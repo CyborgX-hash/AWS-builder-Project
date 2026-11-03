@@ -279,3 +279,4 @@ class WeatherService:
             source="KrishiSathi Agro-Meteorological Cache (IMD & Open-Meteo standard baseline)",
             retrieved_at=time.strftime("%Y-%m-%d %H:%M:%S IST")
         )
+

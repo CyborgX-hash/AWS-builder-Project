@@ -22,3 +22,4 @@ async def get_location_coordinates(location_name: str) -> Dict[str, Any]:
         "state": coords.state,
         "country": coords.country
     }
+

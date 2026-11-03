@@ -49,3 +49,4 @@ class WeatherSummary(BaseModel):
     hourly_next_24h: List[HourlyForecastItem]
     source: str = "Open-Meteo & IMD Reference"
     retrieved_at: str
+

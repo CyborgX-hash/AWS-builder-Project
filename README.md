@@ -130,3 +130,4 @@ Visit `http://localhost:5173` in your browser.
 
 ## 📄 License
 This project is open-source under the [MIT License](LICENSE).
+

@@ -19,3 +19,4 @@ def get_bedrock_model() -> BedrockModel:
     except Exception as e:
         logger.warning(f"Notice during BedrockModel creation: {e}. Model will use available default credentials.")
         return BedrockModel()
+

@@ -33,3 +33,4 @@ class AdvisoryResponse(BaseModel):
     official_advisory_note_hi: str
     forecast_timestamp: str
     data_sources: List[str]
+
