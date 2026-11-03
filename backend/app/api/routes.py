@@ -73,6 +73,26 @@ async def get_weather_forecast_endpoint(
     return await WeatherService.get_forecast(lat, lon, location or "Farm Location")
 
 
+@router.get("/risk/report")
+async def get_risk_report_endpoint(
+    crop: str = Query("Soybean", description="Crop name"),
+    growth_stage: str = Query("Flowering", description="Crop growth stage"),
+    location: Optional[str] = Query("Balaghat", description="Location name"),
+    lat: Optional[float] = Query(None),
+    lon: Optional[float] = Query(None)
+):
+    """Generate deterministic climate risk report for a crop and location."""
+    from app.services.risk_engine import DeterministicRiskEngine
+    if lat is None or lon is None:
+        coords = await WeatherService.resolve_coordinates(location or "Balaghat")
+        lat, lon = coords.latitude, coords.longitude
+        location = coords.name
+
+    weather = await WeatherService.get_forecast(lat, lon, location)
+    report = DeterministicRiskEngine.calculate_risks(weather, crop, growth_stage)
+    return report
+
+
 @router.get("/crops")
 def list_crops():
     """List all supported crops with localized names and stage descriptions."""

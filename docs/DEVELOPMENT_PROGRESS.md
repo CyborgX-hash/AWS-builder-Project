@@ -12,7 +12,7 @@ This document tracks all features, milestones, test results, and commits through
 | **Phase 1** | Backend Foundation (FastAPI, Schemas, Config, Health Check) | Completed | `442edea` | Yes |
 | **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `4882faf` | Yes |
 | **Phase 3** | Agricultural Knowledge Base (Crop Profiles, Growth Stages, Rules) | Completed | `90f26ee` | Yes |
-| **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Pending | - | - |
+| **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Completed | `feat(risk)` | Yes |
 | **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Pending | - | - |
 | **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Pending | - | - |
 | **Phase 7** | Frontend Development (React, Vite, Tailwind, Bilingual UI) | Pending | - | - |
@@ -98,3 +98,18 @@ This document tracks all features, milestones, test results, and commits through
 - **Git Commit Hash**: `feat(crop): build structured agronomic knowledge base and crop tools`
 - **GitHub Push Status**: Pushed
 - **Remaining Work**: Deterministic Risk Engine (Phase 4)
+
+### Phase 4: Deterministic Agricultural Risk Engine
+- **Date**: 2026-11-03
+- **Feature Name**: `feat(risk): add deterministic agricultural risk engine with mathematical scoring`
+- **Files Created/Modified**:
+  - `backend/app/services/risk_engine.py` (Heat stress, Excessive rainfall, Waterlogging, Dry spell, Water stress calculations)
+  - `backend/app/tools/risk_tool.py` (Strands agent tool wrapper)
+  - `backend/app/api/routes.py` (`/api/risk/report` endpoint)
+  - `backend/tests/test_risk_engine.py` (6 unit test scenarios)
+  - `docs/DEVELOPMENT_PROGRESS.md`
+- **Tests Executed**: `backend/.venv/bin/pytest backend/tests/test_risk_engine.py -v` (6 passing tests, 20 total)
+- **Test Results**: Confirmed deterministic numerical calculations independent of LLM text generation. Heavy rainfall triggers HIGH risk for Soybean; Rice exhibits flood resilience; Heat stress evaluated against crop stage critical thresholds; Dry-spells and water balances verified.
+- **Git Commit Hash**: `feat(risk): add deterministic agricultural risk engine with mathematical scoring`
+- **GitHub Push Status**: Pushed
+- **Remaining Work**: Strands Specialist Agents (Phase 5)
