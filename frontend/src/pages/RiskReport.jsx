@@ -148,3 +148,4 @@ export const RiskReport = ({ language, currentContext }) => {
 };
 
 export default RiskReport;
+

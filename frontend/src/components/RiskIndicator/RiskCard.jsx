@@ -78,3 +78,4 @@ export const RiskCard = ({ assessment, language }) => {
 };
 
 export default RiskCard;
+

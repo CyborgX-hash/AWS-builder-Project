@@ -39,3 +39,4 @@ KrishiSathi bridges this gap through a **hierarchical multi-agent AI architectur
 - Leverages structured agronomic databases from ICAR (Indian Council of Agricultural Research) and FAO.
 - Employs a **deterministic Python risk engine** where numerical risk scores (0-100) are computed mathematically without LLM hallucination.
 - Formulates practical, preventive 3-day action plans in clear, rural-friendly Hindi and English.
+

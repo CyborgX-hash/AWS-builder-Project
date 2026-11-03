@@ -292,3 +292,4 @@ export const Landing = ({ language, onOpenChat }) => {
 };
 
 export default Landing;
+

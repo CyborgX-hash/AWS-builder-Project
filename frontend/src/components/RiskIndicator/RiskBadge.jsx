@@ -39,3 +39,4 @@ export const RiskBadge = ({ level, score, size = 'md' }) => {
 };
 
 export default RiskBadge;
+

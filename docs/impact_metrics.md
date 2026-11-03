@@ -38,3 +38,4 @@ In India, over **86% of farmers operate small and marginal holdings (< 2 hectare
 - **Preventing Input Waste**: A farmer who knows heavy rain is arriving in 12 hours will avoid applying \$15-\$25 worth of urea or pesticides that would otherwise wash off into local waterways.
 - **Saving Seed Investment**: Knowing that waterlogging will occur in low-lying black soils allows farmers to cut contour furrows before germination fails, preventing re-sowing costs.
 - **Protecting Flowering Crops**: Heatwave alerts during silking/anthesis prompt evening protective irrigation to prevent flower drop and yield collapse.
+

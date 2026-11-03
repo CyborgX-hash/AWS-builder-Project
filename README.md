@@ -1,4 +1,4 @@
-# KrishiSathi (कृषिसार्थी)
+# KrishiSathi 
 ### AI-Powered Multi-Agent Climate Intelligence for Smallholder Farmers
 > *"Turning Weather Intelligence into Smarter Farming Decisions."*
 

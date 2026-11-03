@@ -106,3 +106,4 @@ export const SevenDayForecast = ({ daily, language }) => {
 };
 
 export default SevenDayForecast;
+

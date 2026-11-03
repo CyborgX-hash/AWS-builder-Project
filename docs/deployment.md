@@ -71,3 +71,4 @@ docker-compose up --build
 ```
 - Frontend UI: `http://localhost:5173`
 - Backend API Docs: `http://localhost:8000/docs`
+
