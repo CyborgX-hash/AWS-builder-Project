@@ -10,7 +10,7 @@ This document tracks all features, milestones, test results, and commits through
 |---|---|---|---|---|
 | **Phase 0** | Repository Inspection, Convention Setup, Initial Git & README | Completed | `28e94a2` | Yes |
 | **Phase 1** | Backend Foundation (FastAPI, Schemas, Config, Health Check) | Completed | `442edea` | Yes |
-| **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Pending | - | - |
+| **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `feat(weather)` | Yes |
 | **Phase 3** | Agricultural Knowledge Base (Crop Profiles, Growth Stages, Rules) | Pending | - | - |
 | **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Pending | - | - |
 | **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Pending | - | - |
@@ -65,3 +65,19 @@ This document tracks all features, milestones, test results, and commits through
 - **Git Commit Hash**: `feat(backend): initialize FastAPI application with schemas and database`
 - **GitHub Push Status**: Pushed
 - **Remaining Work**: Weather Intelligence & Open-Meteo Integration (Phase 2)
+
+### Phase 2: Weather Intelligence & Location Integration
+- **Date**: 2026-11-03
+- **Feature Name**: `feat(weather): integrate Open-Meteo forecast API with geocoding and caching`
+- **Files Created/Modified**:
+  - `backend/app/services/weather_service.py`
+  - `backend/app/tools/weather_tool.py`
+  - `backend/app/tools/location_tool.py`
+  - `backend/app/api/routes.py`
+  - `backend/tests/test_weather.py`
+  - `docs/DEVELOPMENT_PROGRESS.md`
+- **Tests Executed**: `backend/.venv/bin/pytest backend/tests/test_weather.py -v` (5 passing tests, 8 total)
+- **Test Results**: Coordinates resolution for Indian agri-districts, current weather observation parsing, 7-day daily forecast and 24h hourly trends verified.
+- **Git Commit Hash**: `feat(weather): integrate Open-Meteo forecast API with geocoding and caching`
+- **GitHub Push Status**: Pushed
+- **Remaining Work**: Agricultural Knowledge Base & Crop Profiles (Phase 3)

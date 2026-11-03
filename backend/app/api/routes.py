@@ -7,6 +7,8 @@ from app.config import settings
 from app.database.session import get_db
 from app.database.models import Farmer, CropProfile, WeatherRecord, RiskReport, Advisory
 from app.schemas.farmer import FarmerCreate, FarmerOut
+from app.schemas.weather import WeatherSummary, LocationCoordinates
+from app.services.weather_service import WeatherService
 
 router = APIRouter()
 
@@ -21,6 +23,54 @@ def health_check():
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "environment": settings.ENVIRONMENT
     }
+
+
+@router.get("/weather/coordinates", response_model=LocationCoordinates)
+async def get_coordinates(location: str = Query(..., description="Indian village, town, or district")):
+    """Resolve location name to latitude and longitude."""
+    return await WeatherService.resolve_coordinates(location)
+
+
+@router.get("/weather/current")
+async def get_current_weather_endpoint(
+    lat: Optional[float] = Query(None),
+    lon: Optional[float] = Query(None),
+    location: Optional[str] = Query(None)
+):
+    """Retrieve current weather observation for a location."""
+    if lat is None or lon is None:
+        if not location:
+            raise HTTPException(status_code=400, detail="Must provide either (lat, lon) or location name.")
+        coords = await WeatherService.resolve_coordinates(location)
+        lat, lon = coords.latitude, coords.longitude
+        location = coords.name
+
+    summary = await WeatherService.get_forecast(lat, lon, location or "Farm Location")
+    return {
+        "location": summary.location,
+        "latitude": summary.latitude,
+        "longitude": summary.longitude,
+        "current": summary.current,
+        "retrieved_at": summary.retrieved_at,
+        "source": summary.source
+    }
+
+
+@router.get("/weather/forecast", response_model=WeatherSummary)
+async def get_weather_forecast_endpoint(
+    lat: Optional[float] = Query(None),
+    lon: Optional[float] = Query(None),
+    location: Optional[str] = Query(None)
+):
+    """Retrieve 7-day daily forecast and 24h hourly forecast."""
+    if lat is None or lon is None:
+        if not location:
+            location = "Balaghat"
+        coords = await WeatherService.resolve_coordinates(location)
+        lat, lon = coords.latitude, coords.longitude
+        location = coords.name
+
+    return await WeatherService.get_forecast(lat, lon, location or "Farm Location")
 
 
 @router.post("/farmer/profile", response_model=FarmerOut)
