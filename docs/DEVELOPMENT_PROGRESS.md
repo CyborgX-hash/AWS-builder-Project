@@ -13,8 +13,8 @@ This document tracks all features, milestones, test results, and commits through
 | **Phase 2** | Weather Intelligence (Open-Meteo, Coordinates, Caching) | Completed | `4882faf` | Yes |
 | **Phase 3** | Agricultural Knowledge Base (Crop Profiles, Growth Stages, Rules) | Completed | `90f26ee` | Yes |
 | **Phase 4** | Deterministic Risk Engine (Heat, Rain, Waterlogging, Dry-spell) | Completed | `fc3a34c` | Yes |
-| **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Pending | - | - |
-| **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Pending | - | - |
+| **Phase 5** | Strands Specialist Agents (Weather, Crop, Risk, Advisory Agents) | Completed | `feat(agent)` | Yes |
+| **Phase 6** | Multi-Agent Orchestrator (Strands Agents as Tools) | Completed | `feat(orchestrator)` | Yes |
 | **Phase 7** | Frontend Development (React, Vite, Tailwind, Bilingual UI) | Pending | - | - |
 | **Phase 8** | Frontend-Backend Integration & E2E Workflows | Pending | - | - |
 | **Phase 9** | Testing, Scenarios & Evaluation Suite | Pending | - | - |
@@ -113,3 +113,26 @@ This document tracks all features, milestones, test results, and commits through
 - **Git Commit Hash**: `feat(risk): add deterministic agricultural risk engine with mathematical scoring`
 - **GitHub Push Status**: Pushed
 - **Remaining Work**: Strands Specialist Agents (Phase 5)
+
+### Phase 5 & 6: Strands Multi-Agent Hierarchy & Orchestration
+- **Date**: 2026-11-03
+- **Feature Name**: `feat(agent): implement Strands multi-agent specialist architecture and Krishi orchestrator`
+- **Files Created/Modified**:
+  - `backend/app/agents/model_factory.py` (Amazon Bedrock foundation model factory)
+  - `backend/app/agents/weather_agent.py` (Weather Intelligence Agent with Open-Meteo & IMD tools)
+  - `backend/app/agents/crop_agent.py` (Crop Intelligence Agent with ICAR/FAO agronomic tools)
+  - `backend/app/agents/risk_agent.py` (Risk Assessment Agent calling deterministic engine)
+  - `backend/app/agents/advisory_agent.py` (Farming Advisory Agent)
+  - `backend/app/agents/orchestrator.py` (Krishi Orchestrator using Strands Agents as Tools)
+  - `backend/app/services/advisory_service.py` (3-day farming roadmap and bilingual rule mapper)
+  - `backend/app/tools/advisory_tool.py`
+  - `backend/app/api/routes.py` (`/api/chat`, `/api/advisory/generate`)
+  - `backend/tests/test_agents.py` (6 agent workflow tests)
+  - `docs/architecture.md` (Detailed architectural diagram and agent specifications)
+  - `reports/sample_advisory.md`
+  - `docs/DEVELOPMENT_PROGRESS.md`
+- **Tests Executed**: `backend/.venv/bin/pytest backend/tests -v` (26 passing tests across the backend)
+- **Test Results**: All 4 specialist agents instantiated and registered as tools in KrishiOrchestrator. End-to-end pipeline tested for both English and Hindi queries, entity extraction, deterministic risk integration, and 3-day action plans.
+- **Git Commit Hash**: `feat(agent): implement Strands multi-agent specialist architecture and Krishi orchestrator`
+- **GitHub Push Status**: Pushed
+- **Remaining Work**: Frontend Development (Phase 7)

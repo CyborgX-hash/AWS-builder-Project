@@ -6,11 +6,58 @@ import datetime
 from app.config import settings
 from app.database.session import get_db
 from app.database.models import Farmer, CropProfile, WeatherRecord, RiskReport, Advisory
-from app.schemas.farmer import FarmerCreate, FarmerOut
+from app.schemas.farmer import FarmerCreate, FarmerOut, AdvisoryGenerateRequest
 from app.schemas.weather import WeatherSummary, LocationCoordinates
+from app.schemas.chat import ChatRequest, ChatResponse
 from app.services.weather_service import WeatherService
+from app.services.advisory_service import AdvisoryService
+from app.agents.orchestrator import KrishiOrchestrator
 
 router = APIRouter()
+orchestrator_instance = KrishiOrchestrator()
+
+
+@router.post("/chat", response_model=ChatResponse)
+async def chat_endpoint(request: ChatRequest, db: Session = Depends(get_db)):
+    """Interactive multi-agent chat endpoint supporting Hindi and English."""
+    response = await orchestrator_instance.execute_advisory_pipeline(
+        query=request.query,
+        location=request.location,
+        crop=request.crop,
+        growth_stage=request.growth_stage,
+        language=request.language,
+        lat=request.latitude,
+        lon=request.longitude
+    )
+
+    # Persist advisory record to SQLite history
+    try:
+        advisory_entry = Advisory(
+            crop=response.extracted_entities.get("crop"),
+            recommendation=response.response[:1000],
+            language=response.language
+        )
+        db.add(advisory_entry)
+        db.commit()
+    except Exception as e:
+        db.rollback()
+
+    return response
+
+
+@router.post("/advisory/generate")
+async def generate_advisory_endpoint(req: AdvisoryGenerateRequest, db: Session = Depends(get_db)):
+    """Direct structured advisory generation for selected crop and location."""
+    response = await orchestrator_instance.execute_advisory_pipeline(
+        query=f"Provide detailed agricultural advisory for {req.crop} at {req.growth_stage} in {req.location}",
+        location=req.location,
+        crop=req.crop,
+        growth_stage=req.growth_stage,
+        language=req.language or "en",
+        lat=req.latitude,
+        lon=req.longitude
+    )
+    return response.structured_data.get("advisory") if response.structured_data else {}
 
 
 @router.get("/health")
